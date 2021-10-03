@@ -15,7 +15,7 @@ SELECT MIN(DATE) FROM SPACEXTBL WHERE "Landing _Outcome"='Success (drone ship)';
 
 SELECT MIN(DATE) FROM SPACEXTBL WHERE "Landing _Outcome"='Success (ground pad)';
 
-SELECT MIN(DATE) FROM SPACEXTBL WHERE MISSION_OUTCOME='Success';
+SELECT MIN(DATE) FROM SPACEXTBL WHERE MISSION_OUTCOME LIKE 'Success%';
 
 SELECT colname FROM syscat.columns WHERE tabname = 'SPACEXTBL';
 
